@@ -17,19 +17,19 @@ public class MainOrderController {
     private AnchorPane qtyBurger;
 
     @FXML
-    private Spinner<?> qtyBurgur;
+    private Spinner<Integer> qtyBurgur;
 
     @FXML
-    private Spinner<?> qtyFishBun;
+    private Spinner<Integer> qtyFishBun;
 
     @FXML
-    private Spinner<?> qtyPizza;
+    private Spinner<Integer> qtyPizza;
 
     @FXML
-    private Spinner<?> qtySandwitch;
+    private Spinner<Integer> qtySandwitch;
 
     @FXML
-    private TableView<?> tvOrders;
+    private TableView<String> tvOrders;
 
     @FXML
     private TextField txtContact;
@@ -37,9 +37,14 @@ public class MainOrderController {
     @FXML
     private TextField txtName;
 
+    public void initialize(){
+
+    }
     @FXML
     void btnPlaceOnAction(ActionEvent event) {
-
+        String name=txtName.getText();
+        String contact=txtContact.getText();
+        int burgerQty=qtyBurger.get
     }
 
 }
