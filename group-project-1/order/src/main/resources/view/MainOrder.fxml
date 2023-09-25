@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="qtyBurger" prefHeight="400.0" prefWidth="642.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.MainOrderController">
+   <children>
+      <Label layoutX="378.0" layoutY="40.0" text="Name" />
+      <Label layoutX="371.0" layoutY="102.0" text="Contact" />
+      <TextField fx:id="txtName" layoutX="312.0" layoutY="66.0" />
+      <TextField fx:id="txtContact" layoutX="312.0" layoutY="130.0" />
+      <ImageView fitHeight="68.0" fitWidth="70.0" layoutX="247.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Downloads/burger.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="70.0" layoutX="332.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Downloads/sandwitch.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="70.0" layoutX="417.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Downloads/pizza.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="70.0" layoutX="513.0" layoutY="187.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../../../../../Downloads/fishbun.jpeg" />
+         </image>
+      </ImageView>
+      <Spinner fx:id="qtyBurgur" layoutX="252.0" layoutY="253.0" prefHeight="24.0" prefWidth="60.0" />
+      <Spinner fx:id="qtySandwitch" layoutX="337.0" layoutY="253.0" prefHeight="24.0" prefWidth="60.0" />
+      <Spinner fx:id="qtyPizza" layoutX="422.0" layoutY="253.0" prefHeight="24.0" prefWidth="60.0" />
+      <Spinner fx:id="qtyFishBun" layoutX="506.0" layoutY="253.0" prefHeight="24.0" prefWidth="60.0" />
+      <Button fx:id="btnPlace" layoutX="255.0" layoutY="317.0" mnemonicParsing="false" onAction="#btnPlaceOnAction" prefHeight="24.0" prefWidth="293.0" text="PLACE" />
+      <TableView fx:id="tvOrders" layoutX="14.0" layoutY="66.0" prefHeight="311.0" prefWidth="225.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Order Id" />
+          <TableColumn prefWidth="75.0" text="Name" />
+            <TableColumn prefWidth="75.0" text="Status" />
+        </columns>
+      </TableView>
+      <Label layoutX="109.0" layoutY="40.0" text="Orders" />
+   </children>
+</AnchorPane>
